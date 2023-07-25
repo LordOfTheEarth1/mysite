@@ -5,13 +5,14 @@
     <title>My website</title>
     <meta name="generator" content="thesitewizard.com's Layout Wizard 3.0.1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="all" href="styles1.css">
+    <link rel="stylesheet" type="text/css" media="all" href="styles.css">
   </head>
-  <body>
+  <body style="   font-family: &quot;Times New Roman&quot;,&quot;Times&quot;,&quot;serif&quot;;">
     <div id="tswcontainer">
       <div id="tswheader" style="padding: 0px;"> <!-- start of header section: insert your logo, etc, here -->
-        <img src="images/logo.png" alt="Cool Art" id="logo"> <br>
-        <div id="tswcsstabs" style="font-family: &quot;Times New Roman&quot;,&quot;Times&quot;,&quot;serif&quot;;">
+        <a href="index.html"><img src="images/logo.png" alt="Cool Art" id="logo"></a>
+        <br>
+        <div id="tswcsstabs">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="page1.html">Page 1</a></li>
@@ -23,7 +24,7 @@
         <div id="tswcontent">
           <div id="tswcontproper">
             <!-- start of content column: insert your content here -->
-            <h1>Page 1</h1>
+            <h1>Home</h1>
             <p> Placeholder content. Replace everything here with your actual
               content. </p>
             <p> If you want a navigation menu for your side column that looks
