@@ -38,7 +38,6 @@ div#tswcontent {
   div#tswsidecol {
     float: none;
     width: 100%;
-	height: 70%;
   }
   div#tswcontent {
     float: none;
@@ -118,4 +117,32 @@ div#tswfooter {
 #tswcsstabs li a:hover {
   color: black;
   background-color: #ff6565;
+}
+
+ .pulse {
+	  animation-name: pulseanim;
+	  animation-duration: 2s;
+	  animation-iteration-count: infinite;
+	  animation-timing-function: ease-in-out
+  }
+  
+@keyframes pulseanim {
+  0%, 100% {
+    color: red;
+  }
+  16% {
+	  color: purple
+  }
+  33% {
+    color: blue;
+  }
+  49% {
+	  color: lime
+  }
+  66% {
+    color: green;
+  }
+  82% {
+    color: yellow;
+  }
 }

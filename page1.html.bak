@@ -27,7 +27,7 @@
       <div id="tswcontent">
         <div id="tswcontproper">
           <!-- start of content column: insert your content here -->
-          <h1>Home</h1>
+              <div class="pulse"><h1>Page 1</h1></div>
           <p> Placeholder content. Replace everything here with your actual
             content. </p>
           <p> If you want a navigation menu for your side column that looks like
