@@ -11,9 +11,8 @@
   <body style="           font-family: &quot;Times New Roman&quot;,&quot;Times&quot;,&quot;serif&quot;;">
     <div id="tswcontainer">
       <div id="tswheader" style="padding: 0px; float: left;">
-        <!-- start of header section: insert your logo, etc, here --> <img src="images/logo.png"
-          alt="Cool Art" id="logo" style="float: left; width: 14%; height: 14%;">
-        <h1>Ben Goldberg's Site</h1>
+        <!-- start of header section: insert your logo, etc, here --> <img src="images/logo.png" alt="Cool Art" id="logo" style="float: left; width: 14%; height: 14%;">
+        <img src="images/title.png" alt="Cool Art" id="logo" style="float: left; width: 50%; height: 50%; margin-left: 150px; margin-top: 50px;">
         <!-- end of header section: insert your logo, etc, above this line --> </div>
       <div id="tswcontent">
         <div id="tswcontproper">
