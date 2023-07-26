@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Kanit:600);
+
 body {
   font-family: "Times New Roman", "Times", "serif";
   font-size: 100%;
@@ -120,29 +122,14 @@ div#tswfooter {
 }
 
  .pulse {
-	  animation-name: pulseanim;
-	  animation-duration: 2s;
-	  animation-iteration-count: infinite;
-	  animation-timing-function: ease-in-out
-  }
-  
-@keyframes pulseanim {
-  0%, 100% {
-    color: red;
-  }
-  16% {
-	  color: purple
-  }
-  33% {
-    color: blue;
-  }
-  49% {
-	  color: lime
-  }
-  66% {
-    color: green;
-  }
-  82% {
-    color: yellow;
-  }
+  animation: rainbow-colors 3s linear infinite;
+  animation-delay: calc(-2s * var(--char-percent));
+}
+
+@keyframes rainbow-colors {
+  0% { color: hsl(0turn, 90%, 65%); }
+  25% { color: hsl(.25turn, 90%, 65%); }
+  50% { color: hsl(.5turn, 90%, 65%); }
+  75% { color: hsl(.75turn, 90%, 65%); }
+  100% { color: hsl(1turn, 90%, 65%); }
 }
