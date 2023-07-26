@@ -1,12 +1,13 @@
-let rainbow = false;
 function clickButton() {
-    console.log(`button pressed`)
-    let rainbow = true;
-    const mytext = document.getElementById("mytext");
-    if (mytext.className == "pulse") {
-        mytext.className = "notpulse"
+    const rainbow = document.getElementById("rainbow");
+    if (rainbow.className == "pulse") {
+        rainbow.className = "notpulse"
     } else {
-        mytext.className = "pulse";
+        rainbow.className = "pulse";
     }
+}
 
+function clickButton1() {
+    const monkey = document.getElementById("monkey");
+    monkey.hidden = false;
 }
