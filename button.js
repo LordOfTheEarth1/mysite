@@ -1,10 +1,12 @@
+const rainbows = document.getElementsByClassName("rainbow");
 function clickButton() {
-    const rainbow = document.getElementById("rainbow");
-    if (rainbow.className == "pulse") {
-        rainbow.className = "notpulse"
+for(let rainbow of rainbows) {
+    if (rainbow.classList.contains("pulse")) {
+        rainbow.classList.remove("pulse");
     } else {
-        rainbow.className = "pulse";
+        rainbow.classList.add("pulse");
     }
+}
 }
 
 function clickButton1() {
