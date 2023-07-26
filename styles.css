@@ -131,9 +131,9 @@ div#tswfooter {
 }
 
 @keyframes rainbow-colors {
-  0% { color: hsl(0turn, 100%, 65%); }
-  25% { color: hsl(.25turn, 100%, 65%); }
-  50% { color: hsl(.5turn, 100%, 65%); }
-  75% { color: hsl(.75turn, 100%, 65%); }
-  100% { color: hsl(1turn, 100%, 65%); }
+  0% { color: hsl(0turn, 100%, 50%); }
+  25% { color: hsl(.25turn, 100%, 50%); }
+  50% { color: hsl(.5turn, 100%, 50%); }
+  75% { color: hsl(.75turn, 100%, 50%); }
+  100% { color: hsl(1turn, 100%, 50%); }
 }
