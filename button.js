@@ -2,7 +2,16 @@ const rainbows = document.getElementsByClassName("rainbow");
 const logo = document.getElementById("logo");
 const flying = document.getElementById("flying");
 const monkey = document.getElementById("monkey");
-function clickButton() {
+const title = document.getElementById("title");
+
+function clickButtonHome() {
+    logo.classList.add("flying");
+    setTimeout(() => {
+        logo.classList.remove("flying"); 
+    }, 3000);
+}
+
+function clickButton1() {
 for(let rainbow of rainbows) {
     if (rainbow.classList.contains("pulse")) {
         rainbow.classList.remove("pulse");
@@ -12,13 +21,6 @@ for(let rainbow of rainbows) {
 }
 }
 
-function clickButton1() {
-    monkey.hidden = false;
-}
-
 function clickButton2() {
-    logo.classList.add("flying");
-    setTimeout(() => {
-        logo.classList.remove("flying"); 
-    }, 3000);
+    
 }

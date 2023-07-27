@@ -21,11 +21,6 @@ meter, progress, output {
   max-height: 100%;
 }
 
-div#tswfullscreen {
-  width: 100%;
-  height: 100%;
-}
-
 div#tswsidecol {
   float: right;
   width: 15%;
@@ -101,11 +96,6 @@ div#tswfooter {
   position: fixed;
  }
 
-#monkey {
-  width: 100%;
-  height: 100%;
-}
-
 #tswcsstabs ul {
   margin: 0px;
   padding: 0px;
@@ -123,7 +113,7 @@ div#tswfooter {
   float: left;
   font-family: "Times New Roman", "Times", "serif";
   font-size: 110%;
-  width: calc((1/3)*100%);
+  width: 25%;
 }
 
 #tswcsstabs li a {
