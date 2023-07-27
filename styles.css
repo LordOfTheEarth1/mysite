@@ -72,13 +72,12 @@ div#tswsideproper {
 div#tswheader {
   color: black;
   background-color: #ff3333;
-  width: 100%;
+  padding-bottom: 13.5vh;
 }
 
 div#tswheader2 {
   color: black;
   background-color: #ff3333;
-  padding-top: 3%;
 }
 
 div#tswfooter {
@@ -87,9 +86,24 @@ div#tswfooter {
 }
 
 #logo {
-  width: 15%;
-  margin-left: 0px;
-  float: left;
+  height: 12.5vh;
+  width: auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  position: fixed;
+}
+
+#title {
+  width: 35%;
+  height: 8%;
+  margin-left: 32.5%;
+  margin-top: 3vh;
+  position: fixed;
+ }
+
+#monkey {
+  width: 100%;
+  height: 100%;
 }
 
 #tswcsstabs ul {
@@ -138,12 +152,6 @@ div#tswfooter {
   75% { color: hsl(.75turn, 100%, 50%); }
   100% { color: hsl(1turn, 100%, 50%); }
 }
-
- #logo {
-  position: relative;
-  left: 5px;
-  top: 5px;
- }
 
  .flying {
   animation: flight 3s linear 1;
