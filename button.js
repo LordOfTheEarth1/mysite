@@ -1,4 +1,7 @@
 const rainbows = document.getElementsByClassName("rainbow");
+const logo = document.getElementById("logo");
+const flying = document.getElementById("flying");
+const monkey = document.getElementById("monkey");
 function clickButton() {
 for(let rainbow of rainbows) {
     if (rainbow.classList.contains("pulse")) {
@@ -10,6 +13,9 @@ for(let rainbow of rainbows) {
 }
 
 function clickButton1() {
-    const monkey = document.getElementById("monkey");
     monkey.hidden = false;
+}
+
+function clickButton2() {
+    logo.classList.add("flying");
 }

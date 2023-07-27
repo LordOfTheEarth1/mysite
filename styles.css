@@ -9,7 +9,6 @@ body {
 img {
   max-width: 100%;
   width: auto;
-  height: 10%;
 }
 
 input, select, button, textarea {
@@ -137,3 +136,21 @@ div#tswfooter {
   75% { color: hsl(.75turn, 100%, 50%); }
   100% { color: hsl(1turn, 100%, 50%); }
 }
+
+ #logo {
+  position: relative;
+  left: 5px;
+  top: 5px;
+ }
+
+ .flying {
+  animation: flight 3s linear 1;
+ }
+
+ @keyframes flight {
+  0% {left: 5px; top: 5px;}
+  25% {left: 10%; top: 40%;}
+  50% {left: 60%; top: 60%;}
+  75% {left: 40%; top: 10%;}
+  100% {left: 5px; top: 5px;}
+ }
