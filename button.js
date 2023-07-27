@@ -1,4 +1,5 @@
 const rainbows = document.getElementsByClassName("rainbow");
+const parties = document.getElementsByClassName("party");
 const logo = document.getElementById("logo");
 const flying = document.getElementById("flying");
 const monkey = document.getElementById("monkey");
@@ -18,8 +19,14 @@ for(let rainbow of rainbows) {
         rainbow.classList.add("pulse");
     }
 }
+for(let party of parties) {
+    if (party.hasAttributes("hidden")) {
+        party.removeAttribute("hidden");
+    } else {
+        party.setAttribute("hidden",);
+    }
+}
 }
 
 function clickButton2() {
-
 }

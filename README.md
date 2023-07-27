@@ -1,2 +1,1 @@
-# mysite
-# mysite
+Hello, this set of files includes a simple calculator, number guessing game, dice roller, and a site I was just messing around with.
