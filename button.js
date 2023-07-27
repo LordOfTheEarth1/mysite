@@ -18,4 +18,7 @@ function clickButton1() {
 
 function clickButton2() {
     logo.classList.add("flying");
+    setTimeout(() => {
+        logo.classList.remove("flying"); 
+    }, 3000);
 }
