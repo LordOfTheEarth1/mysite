@@ -2,7 +2,6 @@ const rainbows = document.getElementsByClassName("rainbow");
 const logo = document.getElementById("logo");
 const flying = document.getElementById("flying");
 const monkey = document.getElementById("monkey");
-const title = document.getElementById("title");
 
 function clickButtonHome() {
     logo.classList.add("flying");
@@ -22,5 +21,5 @@ for(let rainbow of rainbows) {
 }
 
 function clickButton2() {
-    
+
 }
