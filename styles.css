@@ -130,6 +130,10 @@ div#tswfooter {
   animation: rainbow-colors 3s linear infinite;
 }
 
+ .hidden {
+  display: none;
+ }
+
 @keyframes rainbow-colors {
   0% { color: hsl(0turn, 100%, 50%); }
   25% { color: hsl(.25turn, 100%, 50%); }

@@ -20,10 +20,10 @@ for(let rainbow of rainbows) {
     }
 }
 for(let party of parties) {
-    if (party.hasAttributes("hidden")) {
-        party.removeAttribute("hidden");
+    if (party.classList.contains("hidden")) {
+        party.classList.remove("hidden");
     } else {
-        party.setAttribute("hidden",);
+        party.classList.add("hidden",);
     }
 }
 }
