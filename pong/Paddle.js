@@ -31,9 +31,18 @@ class Paddle {
         //   Math.min() and Math.max() to limit the velocity
         //   ball.y to see where the ball is
         //   ball.vy to see where the ball is going
-
-        this.vy = 0; // Modify this line to add your own code
-
+         if (ball.vx > 0) {
+            let paddleVelocity = 3;
+            if ((this.y + paddleLength / 2) > ball.y) {
+                this.vy = -paddleVelocity;
+            } else if ((this.y + paddleLength / 2) < ball.y) {
+                this.vy = paddleVelocity;
+            } else {
+                this.vy = 0;
+            }
+        } else {
+            this.vy = 0;
+        }
         // Finally, call move to move the paddle normally
         this.move();
     }

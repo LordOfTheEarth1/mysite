@@ -23,7 +23,10 @@ function resetGame() {
     
     resetBall()
     resetPaddles()
-
+    spawnPower()
+    scoreL = 0;
+    scoreR = 0;
+    updateScore();
     nextTick(); // start running the clock
 }
 
@@ -33,7 +36,7 @@ function resetPaddles() {
 }
 
 function resetBall() {
-    ball = new Ball(boardWidth/2, boardHeight/2, 1, -1, ballRadius, "red");
+    ball = new Ball(boardWidth/2, boardHeight/2, 2, -2, ballRadius, "red");
 }
 
 function clearBoard() {
@@ -83,4 +86,23 @@ function score(player) {
 function updateScore() {
     const scoreboard = document.getElementById("scoreboard");
     scoreboard.innerHTML = `${scoreL} : ${scoreR}`;
+}
+
+let powerexists = false;
+const power = document.getElementById("power");
+
+function spawnPower() {
+    setTimeout(() => {
+        if (Math.random() > 0.8) {
+            if (poweresexists == false) {
+                
+                powerexists = true;
+            }
+        }
+    }, 5000);
+
+    spawnPower()
+}
+
+function pickupPower() {
 }

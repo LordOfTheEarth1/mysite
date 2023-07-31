@@ -2,7 +2,7 @@ const UPARROW = 38;
 const DOWNARROW = 40;
 const WKEY = 87;
 const SKEY = 83;
-let paddleVelocity = 5;
+let paddleVelocity = 3;
 
 window.addEventListener("keydown", keyDown);
 function keyDown(event) {
