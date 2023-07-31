@@ -6,15 +6,21 @@ const monkey = document.getElementById("monkey");
 const scatman = document.getElementById("scatman");
 let playing = false;
 let jokecount = 0;
+let flycount = 0;
 
-function clickButtonHome() {
+function flyIcon() {
     logo.classList.add("flying");
     setTimeout(() => {
         logo.classList.remove("flying"); 
     }, 3000);
+    flycount += 1;
+    if (flycount >= 5) {
+        flycount = 0;
+        location.href = 'pong/index.html';
+    }
 }
 
-function clickButton1() {
+function partyTime() {
 for(let rainbow of rainbows) {
     if (rainbow.classList.contains("pulse")) {
         rainbow.classList.remove("pulse");
@@ -49,7 +55,7 @@ let getJoke = () => {
     });
 }
 
-function clickButton2() {
+function sayJoke() {
     getJoke();
     jokecount += 1;
     if (jokecount >= 10) {
