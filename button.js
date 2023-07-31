@@ -5,6 +5,7 @@ const flying = document.getElementById("flying");
 const monkey = document.getElementById("monkey");
 const scatman = document.getElementById("scatman");
 let playing = false;
+let jokecount = 0;
 
 function clickButtonHome() {
     logo.classList.add("flying");
@@ -30,26 +31,29 @@ for(let party of parties) {
 }
 if (playing == false) {
     scatman.play();
-    let playing = true;
+    playing = true;
 } else {
     scatman.pause();
-    let playing = false;
+    playing = false;
 }
 }
 
 const jokeContainer = document.getElementById("joke");
 const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,racist,explicit&type=single";
 
-function clickButton2() {
-    getJoke();
-}
-
 let getJoke = () => {
-    jokeContainer.classList.remove("fade");
     fetch(url)
     .then(data => data.json())
     .then(item =>{
         jokeContainer.textContent = `${item.joke}`;
-        jokeContainer.classList.add("fade");
     });
+}
+
+function clickButton2() {
+    getJoke();
+    jokecount += 1;
+    if (jokecount >= 10) {
+        jokecount = 0;
+        location.href = 'numgame/numgame.html';
+    }
 }
