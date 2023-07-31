@@ -75,6 +75,10 @@ div#tswfooter {
   background-color: white;
 }
 
+.party {
+  margin: auto;
+}
+
 #logo {
   height: 12.5vh;
   width: auto;
