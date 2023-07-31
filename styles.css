@@ -75,8 +75,17 @@ div#tswfooter {
   background-color: white;
 }
 
+div#party_guys {
+  display: flex;
+ }
+
 .party {
-  margin: auto;
+  margin: 0 auto;
+}
+
+#joke {
+  font-weight: bold;
+  font-size: 120%;
 }
 
 #logo {
