@@ -10,7 +10,9 @@
 <body>
     <h1>PONG</h1>
     <canvas id="gameboard" width="500" height="500"></canvas>
-    <img src="/star.png" style="width: 3%; height: auto; position: relative;" id="power">
+    <img src="star.png" style="width: 3%; height: auto; position: relative; display: none;" id="image">
+    <audio src="powerup.mp3" id="sound"></audio>
+    <audio src="boing.mp3" id="boing"></audio>
     <div id="scoreboard">0 : 0</div>
     <button id="reset" onclick="resetGame()">RESET</button>
     <br />
@@ -21,5 +23,6 @@
     <script src="Paddle.js"></script>
     <script src="pong.js"></script>
     <script src="controls.js"></script>
+    <script src="Powerup.js"></script>
 </body>
 </html>

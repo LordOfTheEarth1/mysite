@@ -1,3 +1,5 @@
+var boing = document.getElementById("boing");
+
 class Ball {
     constructor(x, y, vx, vy, r, c) {
         this.x = x;
@@ -47,6 +49,7 @@ class Ball {
             let paddlePos = (this.y - paddle.y - paddle.l/2) / paddle.l * 2; // between -1.0 and 1.0
             this.vy = this.vy + paddlePos*paddleSpin;
         }
+        boing.play();
         return false;
     }
 
@@ -60,6 +63,7 @@ class Ball {
             let paddlePos = (this.y - paddle.y - paddle.l/2) / paddle.l * 2; // between -1.0 and 1.0
             this.vy = this.vy + paddlePos*paddleSpin;
         }
+        boing.play();
         return false;
     }
 }
