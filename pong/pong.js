@@ -83,12 +83,19 @@ function nextTick() {
     );
 }
 
+let pausePower = false;
+
 function score(player) {
     if (player == "left") scoreL++;
     if (player == "right") scoreR++;
 
     updateScore();
     resetBall();
+
+    pausePower = true;
+    setTimeout(() => {
+        pausePower = false;
+    }, 1000);
 }
 
 function updateScore() {
@@ -109,7 +116,7 @@ function spawnPower() {
 }
 
 function checkPower() {
-    if (ball.x > 225 && ball.x < 275 && ball.y < power.y + 50 && ball.y > power.y) {
+    if (ball.x > 225 && ball.x < 275 && ball.y < power.y + 50 && ball.y > power.y && pausePower == false) {
         sound.play();
         power.x = 500;
         power.y = 500;
