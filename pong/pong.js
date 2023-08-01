@@ -100,7 +100,7 @@ let powerexists = false;
 
 function spawnPower() {
     setTimeout(() => {
-        if (Math.random() > 0.65) {
+        if (Math.random() > 0.75) {
             power.x = 225;
             power.y = Math.random() * 475;
         }

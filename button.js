@@ -7,6 +7,7 @@ const scatman = document.getElementById("scatman");
 let playing = false;
 let jokecount = 0;
 let flycount = 0;
+let stillActive = false;
 
 function flyIcon() {
     logo.classList.add("flying");
@@ -21,6 +22,11 @@ function flyIcon() {
 }
 
 function partyTime() {
+if (stillActive == false)  {
+    stillActive = true;
+} else {
+    stillActive = false;
+}
 for(let rainbow of rainbows) {
     if (rainbow.classList.contains("pulse")) {
         rainbow.classList.remove("pulse");
@@ -42,6 +48,12 @@ if (playing == false) {
     scatman.pause();
     playing = false;
 }
+setTimeout(() => {
+    if (stillActive == true) {
+        partyTime();
+        location.href = 'clickgame/index.html'
+    }
+}, 30000);
 }
 
 const jokeContainer = document.getElementById("joke");

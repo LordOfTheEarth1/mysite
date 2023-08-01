@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Game</title>
+    <link rel="stylesheet" href="overlays.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="audio" src="Elements/yarrr.mp3"></audio>
+    <h1>Pirating Gold Game</h1>
+    <h2>Gold: <span id="score">5</span></h2>
+    <div id="store-container">
+        <div class="store" name="Treasure Chest" cost="5" reap="2" cooldown="0.5" 
+        src="Elements/chest.png"></div>
+        <div class="store" name="Small Pirate Boat" cost="15" reap="10" cooldown="2.0" auto="true"
+        src="Elements/pirates1.png"></div>
+        <div class="store" name="Large Pirate Boat" cost="150" reap="100" cooldown="5.0" auto="true"
+        src="Elements/pirates2.png" imgstyle="filter: hue-rotate(0deg);"></div>
+        <div class="store" name="SUPER PIRATE BOAT" cost="5000" reap="1000" cooldown="10.0" auto="true"
+        src="Elements/pirates3.png"></div>
+        <div class="store" name="Treasure Map" cost="15000" reap="10000" cooldown="15.0"
+        src="Elements/map.png"></div>
+        <div class="store" name="Navy Corruption" cost="150000" reap="1000000" cooldown="2.0"
+        src="Elements/navy.png"></div>
+    </div>
+    <div id="widget-container-nonauto"></div>
+    <div id="widget-container-auto"></div>
+    <script src="./game.js"></script>
+    <script src="./load.js"></script>
+</body>
+</html>
