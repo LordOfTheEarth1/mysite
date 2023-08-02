@@ -30,16 +30,17 @@ function resetGame() {
     scoreL = 0;
     scoreR = 0;
     updateScore();
+
     nextTick(); // start running the clock
 }
 
 function resetPaddles() {
-    paddleL = new Paddle(0, 0, paddleLength, paddleWidth, "black")
-    paddleR = new Paddle(boardWidth - paddleWidth, 0, paddleLength, paddleWidth, "black")
+    paddleL = new Paddle(0, (boardHeight / 2) - (paddleLength / 2), paddleLength, paddleWidth, "black")
+    paddleR = new Paddle(boardWidth - paddleWidth, (boardHeight / 2) - (paddleLength / 2), paddleLength, paddleWidth, "black")
 }
 
 function resetBall() {
-    ball = new Ball(boardWidth / 2, boardHeight / 2, -2, -2, ballRadius, "red");
+    ball = new Ball(boardWidth / 2, boardHeight / 2, (Math.round(Math.random()) * 2 - 1) * 2, (Math.round(Math.random()) * 2 - 1) * Math.random() * 2, ballRadius, "red");
 }
 
 function resetPower() {
@@ -91,7 +92,7 @@ function score(player) {
 
     updateScore();
     resetBall();
-
+    
     pausePower = true;
     setTimeout(() => {
         pausePower = false;
@@ -125,6 +126,7 @@ function checkPower() {
                 paddleL.y = 300;
             }
             paddleL.l = paddleLength * 2;
+
             setTimeout(() => {
                 paddleL.l = paddleLength;
             }, 5000);
@@ -133,8 +135,10 @@ function checkPower() {
                 paddleR.y = 300;
             }
             paddleR.l = paddleLength * 2;
+            paddleMult = 2;
             setTimeout(() => {
                 paddleR.l = paddleLength;
+                paddleMult = 1;
             }, 5000);
         }
     }

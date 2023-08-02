@@ -1,3 +1,5 @@
+let paddleMult = 1; 
+
 class Paddle {
     constructor(x, y, l, w, c) {
         this.x = x;
@@ -33,9 +35,9 @@ class Paddle {
         //   ball.vy to see where the ball is going
          if (ball.vx > 0) {
             let paddleVelocity = 3;
-            if ((this.y + paddleLength / 2) > ball.y) {
+            if (this.y + (paddleLength / 2)*paddleMult > ball.y + 5) {
                 this.vy = -paddleVelocity;
-            } else if ((this.y + paddleLength / 2) < ball.y) {
+            } else if (this.y + (paddleLength / 2)*paddleMult < ball.y - 5) {
                 this.vy = paddleVelocity;
             } else {
                 this.vy = 0;
