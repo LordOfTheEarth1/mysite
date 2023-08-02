@@ -139,13 +139,14 @@ div#party_guys {
   background-color: #ff6565;
 }
 
- .pulse {
+ .pulseText {
   animation: rainbow-colors 3s linear infinite;
 }
 
- .hidden {
-  display: none;
- }
+.pulseBackground {
+  animation: rainbow-background 3s linear infinite;
+}
+
 
 @keyframes rainbow-colors {
   0% { color: hsl(0turn, 100%, 50%); }
@@ -153,6 +154,14 @@ div#party_guys {
   50% { color: hsl(.5turn, 100%, 50%); }
   75% { color: hsl(.75turn, 100%, 50%); }
   100% { color: hsl(1turn, 100%, 50%); }
+}
+
+@keyframes rainbow-background {
+  0% { background-color: hsl(0turn, 100%, 50%); }
+  25% { background-color: hsl(.25turn, 100%, 50%); }
+  50% { background-color: hsl(.5turn, 100%, 50%); }
+  75% { background-color: hsl(.75turn, 100%, 50%); }
+  100% { background-color: hsl(1turn, 100%, 50%); }
 }
 
  .flying {

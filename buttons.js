@@ -14,6 +14,8 @@ function flyIcon() {
     }
 }
 
+const header = document.getElementById("tswheader");
+const tabs = document.getElementsByClassName("tab");
 const rainbows = document.getElementsByClassName("rainbow");
 const parties = document.getElementsByClassName("party");
 const scatman = document.getElementById("scatman");
@@ -22,10 +24,22 @@ let playtime = 0;
 
 function partyElements() {
     for (let rainbow of rainbows) {
-        if (rainbow.classList.contains("pulse")) {
-            rainbow.classList.remove("pulse");
+        if (rainbow.classList.contains("pulseText")) {
+            rainbow.classList.remove("pulseText");
         } else {
-            rainbow.classList.add("pulse");
+            rainbow.classList.add("pulseText");
+        }
+    }
+    if (header.classList.contains("pulseBackground")) {
+        header.classList.remove("pulseBackground");
+    } else {
+        header.classList.add("pulseBackground");
+    }
+    for (let tab of tabs) {
+        if (tab.classList.contains("pulseBackground")) {
+            tab.classList.remove("pulseBackground");
+        } else {
+            tab.classList.add("pulseBackground");
         }
     }
     for (let party of parties) {
@@ -36,11 +50,11 @@ function partyElements() {
         }
     }
     if (playing == false) {
-        //scatman.play();
+        scatman.play();
         playing = true;
         playtime = 0;
     } else {
-        //scatman.pause();
+        scatman.pause();
         playing = false;
     }
 }
@@ -51,12 +65,12 @@ function partyTime() {
         if (playing == false) {
             clearInterval(redirectCount);
         }
-        playtime += 0.1;
+        playtime += 0.25;
         if (playtime == 30) {
             partyElements();
             location.href = 'clickgame/index.html';
         }
-    }, 100);
+    }, 250);
 }
 
 const jokeContainer = document.getElementById("joke");
